@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    width: 30%;
+    height: 100vh;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+.screen{
+    width: 80%;
+    height: 30vh;
+    background-color: grey;
+    margin-inline: 10%;
+    margin-block: 10%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 3px 3px white;
+    font-size: 2rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.buttons{
+    width: 80%;
+    margin-inline: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+}
+.buttons .btn{
+height: 3.75rem;
+width: 20%;
+background-color: rgb(83, 83, 192);
+border: 2px solid white;
+border-radius: 1rem;
+font-size: 1.2rem;
+font-weight: 400;
+color: black;
+transition: 1s;
+cursor: pointer;
+}
+.buttons .btn:hover{
+    transform: scale(1.04);
+}
+#clear{
+    width: 90%;
+    height: 3.25rem;
+    background-color: darkorange;
+    border-radius: 0.5rem;
+}
+
+@media (min-width : 768px) and (max-width : 1024px ){
+    .calculator{
+        width: 50%;
+    }
+}
+@media (min-width : 481px) and (max-width : 768px ){
+    .calculator{
+        width: 75%;
+    }
+}
+@media (min-width : 330px) and (max-width : 480px ){
+    .calculator{
+        width: 90%;
+    }
+}
